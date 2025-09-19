@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "8c1afa8b-89dd-4131-97ee-c153f187f7d1",
+		"name": "CarParkApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12073739"
+	},
+	"item": [
+		{
+			"name": "ParkVehicle",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status is 200\", () => pm.response.to.have.status(200));",
+							"const body = pm.response.json();",
+							"pm.test(\"Has VehicleReg\", () => pm.expect(body.VehicleReg).to.be.a('string'));",
+							"pm.test(\"Has SpaceNumber\", () => pm.expect(body.SpaceNumber).to.be.a('number'));",
+							"pm.test(\"Has TimeIn ISO string\", () => pm.expect(body.TimeIn).to.match(/\\d{4}-\\d{2}-\\d{2}T/));",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"VehicleReg\": \"ABC123\",\n    \"VehicleType\": \"Small\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/parking",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"parking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ParkingStatus",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status is 200\", () => pm.response.to.have.status(200));",
+							"const body = pm.response.json();",
+							"pm.test(\"Has AvailableSpaces number\", () => pm.expect(body.AvailableSpaces).to.be.a('number'));",
+							"pm.test(\"Has OccupiedSpaces number\", () => pm.expect(body.OccupiedSpaces).to.be.a('number'));",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/parking",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"parking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ExitVehicle",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status is 200\", () => pm.response.to.have.status(200));",
+							"const body = pm.response.json();",
+							"pm.test(\"Has VehicleReg\", () => pm.expect(body.VehicleReg).to.be.a('string'));",
+							"pm.test(\"VehicleCharge numeric and >= 0\", () => pm.expect(body.VehicleCharge).to.be.a('number') && pm.expect(body.VehicleCharge).to.be.at.least(0));",
+							"pm.test(\"TimeOut > TimeIn\", () => {",
+							"    const tin = new Date(body.TimeIn).getTime();",
+							"    const tout = new Date(body.TimeOut).getTime();",
+							"    pm.expect(tout).to.be.greaterThan(tin);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"VehicleReg\": \"ABC123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/parking/exit",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"parking",
+						"exit"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": ""
+		}
+	]
+}

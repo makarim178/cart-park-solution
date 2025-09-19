@@ -1,0 +1,15 @@
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Application/bin/Debug/net9.0/CarPark.Application.deps.json
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Application/bin/Debug/net9.0/CarPark.Application.dll
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Application/bin/Debug/net9.0/CarPark.Application.pdb
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Application/bin/Debug/net9.0/CarPark.Domain.dll
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Application/bin/Debug/net9.0/CarPark.Domain.pdb
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Application/obj/Debug/net9.0/CarPark.Application.csproj.AssemblyReference.cache
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Application/obj/Debug/net9.0/CarPark.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Application/obj/Debug/net9.0/CarPark.Application.AssemblyInfoInputs.cache
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Application/obj/Debug/net9.0/CarPark.Application.AssemblyInfo.cs
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Application/obj/Debug/net9.0/CarPark.Application.csproj.CoreCompileInputs.cache
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Application/obj/Debug/net9.0/CarPark..EFC80AE6.Up2Date
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Application/obj/Debug/net9.0/CarPark.Application.dll
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Application/obj/Debug/net9.0/refint/CarPark.Application.dll
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Application/obj/Debug/net9.0/CarPark.Application.pdb
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Application/obj/Debug/net9.0/ref/CarPark.Application.dll

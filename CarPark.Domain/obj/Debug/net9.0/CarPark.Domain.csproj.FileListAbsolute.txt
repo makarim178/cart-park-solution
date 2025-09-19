@@ -1,0 +1,11 @@
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Domain/bin/Debug/net9.0/CarPark.Domain.deps.json
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Domain/bin/Debug/net9.0/CarPark.Domain.dll
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Domain/bin/Debug/net9.0/CarPark.Domain.pdb
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Domain/obj/Debug/net9.0/CarPark.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Domain/obj/Debug/net9.0/CarPark.Domain.AssemblyInfoInputs.cache
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Domain/obj/Debug/net9.0/CarPark.Domain.AssemblyInfo.cs
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Domain/obj/Debug/net9.0/CarPark.Domain.csproj.CoreCompileInputs.cache
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Domain/obj/Debug/net9.0/CarPark.Domain.dll
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Domain/obj/Debug/net9.0/refint/CarPark.Domain.dll
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Domain/obj/Debug/net9.0/CarPark.Domain.pdb
+/Users/mir/StudioProjects/tds/CarParkSolution/CarPark.Domain/obj/Debug/net9.0/ref/CarPark.Domain.dll
