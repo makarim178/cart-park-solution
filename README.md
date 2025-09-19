@@ -221,26 +221,27 @@ Unit tests validate:
 
 ---
 
-## 🌍 GitHub Setup
+## 📥 Clone the Repository with SSH
 
-### 1. Initialize repo
-```bash
-git init
-git add .
-git commit -m "Initial commit: CarPark API with Clean Architecture"
-```
+To get the project locally using SSH:
 
-### 2. Create GitHub repository
-- Go to [GitHub](https://github.com/) → New Repository  
-- Name it `CarParkSolution`  
-- Leave empty (no README or .gitignore)  
+1. Make sure you have an SSH key added to your GitHub account.  
+   - [GitHub guide: Adding a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
-### 3. Link local repo
-```bash
-git remote add origin https://github.com/<username>/CarParkSolution.git
-git branch -M main
-git push -u origin main
-```
+2. Copy the SSH link from the repository page on GitHub.  
+   - It looks like this:  
+     ```
+     git@github.com:<username>/CarParkSolution.git
+     ```
+
+3. Clone the repo using:
+   ```bash
+   git clone git@github.com:<username>/CarParkSolution.git
+
+4. Navigate into the project folder:
+  ```bash 
+  cd carparksolution
+  ```
 
 ---
 
